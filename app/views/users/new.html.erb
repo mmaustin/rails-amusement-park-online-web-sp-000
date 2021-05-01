@@ -1,3 +1,5 @@
+<p>Sign Up</p>
+
 <%= form_for @user do |f|%>
     <%= f.label 'Name'%>
     <%= f.text_field :name%><br>
@@ -10,7 +12,7 @@
     <%= f.label 'Height'%>
     <%= f.number_field :height%><br>
     <%= f.label 'Tickets'%>
-    <%= f.text_field :tickets%><br>
+    <%= f.number_field :tickets%><br>
     <%= f.label 'Admin'%>
     <%= f.check_box :admin%><br>
     <%= f.submit 'Create User'%>

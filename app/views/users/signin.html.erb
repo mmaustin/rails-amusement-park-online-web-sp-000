@@ -1,0 +1,8 @@
+<form action='/sign' method='post'>
+    <select name='user_name'>
+        <%@users.each do |u|%>
+        <option><%= u.name %></option>
+        <%end%>
+    <input type=password name='password'>
+    <input type='submit' value='Sign In'>
+</form>
