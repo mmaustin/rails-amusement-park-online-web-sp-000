@@ -1,0 +1,9 @@
+<%= @attraction.name%>
+
+<%= form_tag rides_path do%>
+    <%= hidden_field_tag(:attraction_id, @attraction.id) %>
+    <%= hidden_field_tag(:user_id, session[:user_id])%>
+<%= button_to "Go on this ride"%> 
+<%end%>
+
+

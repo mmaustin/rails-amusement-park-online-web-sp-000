@@ -1,7 +1,14 @@
+<% if flash[:notice]%>
+    <%= flash[:notice]%><br>
+    <%end%>
+
 <%= @user.name%>
-<p>Mood happy<%= %></p>
-<%= @user.tickets%>
+<p>Mood happy</p>
+<p>Tickets: <%= @user.tickets%></p>
 <%= @user.height%>
 <p>ADMIN</p>
+
+<h3>See attractions</h3>
+<%= link_to 'See attractions', attractions_path%>
 
 <%= link_to 'Log Out', user_path(@user), method: :delete %>
