@@ -6,7 +6,7 @@ class RidesController < ApplicationController
         @ride = Ride.new(ride_params)
         #binding.pry
         @user = User.find(ride_params[:user_id])
-        #@attraction = Attraction.find(ride_params[:attraction_id])
+        @attraction = Attraction.find(ride_params[:attraction_id])
         @messages = @ride.take_ride
         redirect_to user_path(@user), :flash => { :notice => @messages}
     end
