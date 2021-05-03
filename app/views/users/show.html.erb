@@ -2,12 +2,13 @@
     <%= flash[:notice]%><br>
     <%end%>
 
-<%= @user.name%>
-<p>Mood happy</p>
-<p>Tickets: <%= @user.tickets%></p>
-<%= @user.height%>
-<p>ADMIN</p>
-<p>sad</p>
+
+<%= @user.name%><br>
+<p>Mood happy</p><br>
+<p>Tickets: <%= @user.tickets%></p><br>
+<%= @user.height%><br>
+<p>ADMIN</p><br>
+<p>sad</p><br>
 
 <h3>See attractions</h3>
 <%= link_to 'See attractions', attractions_path%>
